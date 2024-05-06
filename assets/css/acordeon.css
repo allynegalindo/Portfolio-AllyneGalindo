@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     margin: 1rem 0;
-    border: 1px solid #9666E3;
+    border: 1px solid #96623F;
     border-radius: 1rem;
     transition: .25s;
     
@@ -11,8 +11,8 @@
 
 .acordeon.open,
 .acordeon:hover {
-    background-color: #9666E3;
-    border-color: #9666E3
+    background-color: #96623F;
+    border-color: #96623F
 }
 
 .acordeon .trigger {
