@@ -1,0 +1,19 @@
+.projetos a {
+    color: black;
+    
+
+}
+
+.projetos a::before  {
+    content: '';
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-repeat: no-repeat;
+    background-image: url('/assets/icons/github.svg');
+    background-size: contain;
+    background-color: transparent ;
+    margin-right: .5rem;
+    border-radius: 25%;
+}
+

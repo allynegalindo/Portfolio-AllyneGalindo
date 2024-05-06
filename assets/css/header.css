@@ -1,0 +1,106 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/icons/header.svg');
+}
+
+.header .photo{ 
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    
+}
+
+.header .title {
+    text-align: center;
+
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-image: url('/assets/icons/profile.svg');
+    background-size: contain;
+    background-color: transparent ;
+    margin-right: .5rem;
+    border-radius: 25%;
+}
+
+.information .profile::before {
+    background-image: url('/assets/icons/profile.svg');
+}
+
+.information .location::before{
+    background-image: url('/assets/icons/location.svg');
+}
+
+.information .message::before {
+    background-image: url('/assets/icons/message.svg');
+}
+
+.information .zap::before {
+    background-image: url('/assets/icons/zap.svg');
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header{
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo information";
+    }
+
+    .header.photo{
+        grid-area: photo;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+
+    }
+
+    .header .title{
+       grid-area: title;
+       text-align: start;
+       max-width: 100px;
+    }
+
+    .header .information {
+        grid-area: information;
+    }}
